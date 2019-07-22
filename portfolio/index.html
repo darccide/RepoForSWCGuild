@@ -7,33 +7,62 @@
 <html lang="en">
 	<head>
 		<title>Steven Thomson's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+
+			table {
+				margin: auto;
+				width: 90%;
+			}
+
+			th {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+
+			tr {
+				height: 30px;
+			}
+
+			tr:nth-child(odd) {
+				background-color: #e4c3ad;
+			}
+		</style>
 	</head>
 
 	<body>
 		<header>
 			<h1>Portfolio for Steven Thomson</h1>
 		</header>
-		<hr />
+		<hr style="border: thin dotted red;" />
 		<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-		<nav>
-			<hr />
+		<nav class="border">
 			<p><a href="projects.html">Projects</a></p>
-			<hr />
 
-			<hr />
 			<p><a href="testimonials.html">Testimonials</a></p>
-			<hr />
 
-			<hr />
 			<p><a href="contact.html">Contact</a></p>
-			<hr />
+			<div class="clear-float"></div>
 		</nav>
-		<hr />
+		<hr style="width: 50%; border: 2px solid blueviolet;" />
 
 		<section>
-			<article id="about-me">
+			<article class="border" id="about-me">
 				<h2><em>About Me</em></h2>
-				<img src="https://i.imgur.com/YpYTFjb.jpg" alt="Picture of Steven Thomson" />
+				<img src="https://i.imgur.com/YpYTFjb.jpg" alt="Picture of Steven Thomson" width="250" />
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
 					<strong>Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </strong>Nulla quis sem at nibh
@@ -51,66 +80,82 @@
 					lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
 					Quisque volutpat condimentum velit.
 				</p>
+				<div class="clear-float"></div>
 			</article>
-			<article id="past-experiences">
+			<article id="experience">
 				<h2><em>Past Experiences</em></h2>
 				<img
 					src="https://i.imgur.com/YpYTFjb.jpg"
 					alt="Picture representative of Steven Thomson's experiences"
 				/>
-				<table>
-					<caption>
-						Employment History
-					</caption>
-					<tr>
-						<td>2018-Present</td>
-						<td>Apprentice</td>
-						<td>The Software Guild</td>
-					</tr>
-					<tr>
-						<td>2012-2018</td>
-						<td>Clerk</td>
-						<td>United Shipping Services</td>
-					</tr>
-					<tr>
-						<td>2007-2012</td>
-						<td>Student</td>
-						<td>State University</td>
-					</tr>
-				</table>
+				<div class="right-content">
+					<table>
+						<caption>
+							Employment History
+						</caption>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2018-Present</td>
+								<td>Apprentice</td>
+								<td>The Software Guild</td>
+							</tr>
+							<tr>
+								<td>2012-2018</td>
+								<td>Clerk</td>
+								<td>United Shipping Services</td>
+							</tr>
+							<tr>
+								<td>2007-2012</td>
+								<td>Student</td>
+								<td>State University</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src="https://i.imgur.com/YpYTFjb.jpg" alt="Picture representative of Steven Thomson's hobbiess" />
-				<ul>
-					<li>Authors</li>
-					<ol>
-						<li>Stephen King</li>
-						<li>Dan Brown</li>
-						<li>Robin Hobb</li>
-					</ol>
+				<div class="right-content">
+					<ul>
+						<li>Authors</li>
+						<ol>
+							<li>Stephen King</li>
+							<li>Dan Brown</li>
+							<li>Robin Hobb</li>
+						</ol>
 
-					<li>Video Games</li>
-					<ol>
-						<li>Portal</li>
-						<li>World of Warcraft</li>
-						<li>Skyrim</li>
-					</ol>
-				</ul>
-				<ul>
-					<li>Sports</li>
-					<ul>
-						<li>Soccer</li>
-						<li>Rubgy</li>
-						<li>Basketball</li>
+						<li>Video Games</li>
+						<ol>
+							<li>Portal</li>
+							<li>World of Warcraft</li>
+							<li>Skyrim</li>
+						</ol>
 					</ul>
-					<li>Outdoor Activities</li>
 					<ul>
-						<li>Building sandcastles</li>
-						<li>Pokemon hunting</li>
-						<li>Skiing</li>
+						<li>Sports</li>
+						<ul>
+							<li>Soccer</li>
+							<li>Rubgy</li>
+							<li>Basketball</li>
+						</ul>
+						<li>Outdoor Activities</li>
+						<ul>
+							<li>Building sandcastles</li>
+							<li>Pokemon hunting</li>
+							<li>Skiing</li>
+						</ul>
 					</ul>
-				</ul>
+				</div>
+				<div class="clear-float"></div>
 			</article>
 		</section>
 		<footer>
