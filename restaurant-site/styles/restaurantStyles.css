@@ -1,0 +1,90 @@
+/**********Stylesheet for Lou's Cafe**********/
+
+/* Name: Steven Thomson
+   Date Created: 07/15/19
+   Most recent revision: 07/21/19
+*/
+
+/*************Element Selectors***************/
+
+footer {
+	padding-top: 15px;
+	text-align: center;
+}
+
+header {
+	color: steelblue;
+	font-family: 'Lucida Handwriting';
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+nav {
+	list-style-type: none;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 0;
+	text-align: left;
+}
+
+nav li {
+	display: inline;
+	padding-right: 40px;
+}
+
+/***************Pseudo-classes****************/
+
+nav li:active {
+	text-decoration: none;
+}
+
+nav li:hover {
+	font-weight: bold;
+}
+
+nav li:visited {
+	color: skyblue;
+}
+
+/***************Class Selectors***************/
+
+.carousel p {
+	font-family: 'Verdana';
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: center;
+}
+
+.container-fluid {
+	background-color: steelblue;
+	color: whitesmoke;
+
+	text-align: center;
+}
+
+.drinks h2 {
+	text-align: left;
+	text-decoration: underline;
+}
+
+.drinks table,
+td,
+th {
+	padding-bottom: 5px;
+	padding-right: 30px;
+}
+
+.drinks td {
+	text-align: left;
+}
+
+.menu {
+	background-color: steelblue;
+	color: whitesmoke;
+	text-align: center;
+}

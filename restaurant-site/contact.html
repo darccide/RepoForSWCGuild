@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+  Name: Steven Thomson
+  Date Created: 07/15/19
+  Most recent revision: 07/21/19
+-->
+<html lang="en">
+	<head>
+		<link href="/styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Contact Us</title>
+	</head>
+
+	<style>
+
+		/*************Element Selectors***************/
+
+		input, select, textarea {
+			color: steelblue;
+		
+			margin-bottom: 10px;
+			margin-left: 20px;
+			margin-top: 10px;
+			vertical-align: middle;
+		}
+
+		input[type="radio"] {
+  		margin-left: .5em;
+		}
+
+		input[type="checkbox"] {
+  		margin-left: .5em;
+		}
+
+		label {
+      
+      padding-top: 10px;
+      text-align: right;
+      width: 250px;
+		}
+
+		/***************Class Selectors***************/
+
+		.submit {
+			color: steelblue;
+			margin-left: 15em;
+		}
+
+	</style>
+
+	<body>
+		<header>
+			<h1>Lou's Cafe</h1>
+		</header>
+
+		<nav class="nav nav-tabs">
+			<li><a href="home.html"><span class="glyphicon glyphicon-home"></a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</nav>
+
+		<div class="container-fluid">
+			<form>
+				<label for="name">Name: </label> <input type="text" name="name"/><br />
+				<label for="email">Email: </label> <input type="text" name="email"/><br />
+				<label for="phone">Phone: </label> <input type="text" name="phone"/><br />
+				<label for="reason">Reason for Inquiry: </label>
+				<select>
+					<option>Catering</option>
+					<option>Private Party</option>
+					<option>Feedback</option>
+					<option>Other</option>
+				</select><br />
+				<label for="info" id="info-label">Additional Information:</label>
+				<textarea id="info"></textarea><br />
+				<label id="been-to">Have you been to the restaurant?</label> 
+					<input type="radio" class="answer" name="answer" value="no" checked />No
+					<input type="radio" class="answer" name="answer" value="yes" />Yes
+				<br />
+				<br />
+				<label for="contact">Best days to contact you: </label>
+					<input type="checkbox" name="mon" value="mon"/> M 
+					<input type="checkbox" name="tues" value="tues"/> T 
+					<input type="checkbox" name="wed" value="wed"/> W 
+					<input type="checkbox" name="thur" value="thur"/> Th 
+					<input type="checkbox" name="fri" value="fri"/> F
+				<br />
+				<input type="submit" value="Send Request" class="submit" />
+			</form>
+		</div>
+
+	<footer>
+		<address>1118 Honey Street, Paris, TX, 75460<address>
+		<p>(430) 555-5555</p>
+	</footer>
+</body>
+</html>
